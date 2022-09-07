@@ -13,6 +13,7 @@ export const App = () => {
       style={{
         height: '100vh',
         display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
@@ -22,11 +23,9 @@ export const App = () => {
       <div
         style={{
           display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
+          flexDirection: 'row',
         }}
       >
-        {' '}
         <Profile
           username={user.username}
           tag={user.tag}
@@ -37,8 +36,8 @@ export const App = () => {
         <div
           style={{
             display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
           }}
         >
           <Statistics title="Upload stats" stats={data} />
